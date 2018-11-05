@@ -160,7 +160,7 @@ BEGIN
 		Pattern[j] := BigArray[j];
 	CharCount := PatLength;
 	NearEnd := false;
-	IF Verse THEN ('');
+	IF Verse THEN WRITE (' ');
 	FOR j := 1 TO PatLength DO
 		WRITE (Pattern[j])
 	END; {Procedure FirstPattern}
