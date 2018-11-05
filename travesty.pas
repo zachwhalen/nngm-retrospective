@@ -1,4 +1,7 @@
+
+
 PROGRAM travesty (input,output); { Kenner/ O'Rourke, 5/9/84}
+
 (* This is based on Brian Hayes' article in Scientific *)
 (* American, November 1983. It scans a text and generates *)
 (* an n-order simulation of its letter combinations. For *)
@@ -15,9 +18,6 @@ PROGRAM travesty (input,output); { Kenner/ O'Rourke, 5/9/84}
 (* acter at the end of each line, words that ends lines in *)
 (* the original will terminate output lines. Otherwise, *)
 (* output lines will average 50 characters in length. *)
-
-
-
 
 CONST 
 	ArraySize = 3000; {maximum number of text chars}
@@ -217,7 +217,7 @@ BEGIN {Procedure Match}
 				NxtCh := BigArray[i + PatLength + 1];
 				FreqArray[NxtCh] := FreqArray[NxtCh] + 1
 			END;
-			i := SkipArray[i+1] = 1 {Skip to next matching position}
+			i := SkipArray[i + 1] - 1 {Skip to next matching position}
 		END {While}
 	END; {Procedure Match}
 
